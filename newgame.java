@@ -5,54 +5,57 @@ public class newgame {
     public static void main(String[] args) {
         game g = new game();
         g.startgame();
-        // System.out.println();
     }
 }
 
+class game {
 
-class game{
+    game() {
+        Random rd = new Random();
+        x = rd.nextInt(10);
+        System.out.println("x s generated between 0 to 10");
+    }
+
     private int x;
     private int guess;
 
-    void userInput(){
+    int counter = 0;
+
+    void userInput() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enetr the x between 0 to 10");
-        guess=sc.nextInt();
+        System.out.print("\nEnter the x  : ");
+        guess = sc.nextInt();
 
-        Random rd = new Random();
-        x=rd.nextInt(1);
+        
     }
 
-    // Random rd = new Random();
-    // x=rd.nextInt();
-    // System.out.print(x);
+    
+    void startgame() {
 
-    void startgame(){
-
-        game g1 = new game();
-        g1.userInput();
         
-        
-        // Random rd = new Random();
-        // x=rd.nextInt(1);
-        // System.out.print(x);
+        while (guess != x) {
 
-        while(guess == x){
-            if(guess < x){
+            userInput();
+
+            counter++;
+
+            if (guess < x) {
                 System.out.println("your guess is Less than x.");
-            }
-            else if(guess > x){
+            } else if (guess > x) {
                 System.out.println("your guess is greater than x.");
-                }
             }
-            // else {
-            //     System.out.println("Your guess is correct.");
-            // }
+
+            else {
+                System.out.println("\nYour guess is correct.");
+                System.out.println("\nyou guesssed the right number in " + counter + " trial.");
+            }
+
         }
+    }
 
-    //     void countguess(){
+    // void countguess(){
 
-    //     }
+    // }
     // }
 }
