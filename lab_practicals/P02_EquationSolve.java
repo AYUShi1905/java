@@ -1,4 +1,4 @@
-public class p2{
+public class P02_EquationSolve{
 	public static void main(String[] args){
 		//3.4 x + 50.2 y = 44.5  &  2.1 x + 0.55 y = 5.9
 		double a = 3.4;
