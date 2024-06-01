@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class p7{
+public class P06_VowelOrConsonant{
     public static void main(String[] args) {
         Random rm = new Random();
 
