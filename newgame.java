@@ -36,9 +36,9 @@ class game {
         
         while (guess != x) {
 
-            userInput();
-
             counter++;
+
+            userInput();
 
             if (guess < x) {
                 System.out.println("your guess is Less than x.");
@@ -54,8 +54,4 @@ class game {
         }
     }
 
-    // void countguess(){
-
-    // }
-    // }
 }
