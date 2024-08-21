@@ -1,4 +1,4 @@
-public class area{
+public class OOP_P12_Area{
     public static void main(String[] args) {
         Innerarea a1 = new Innerarea();
         a1.area(20);
